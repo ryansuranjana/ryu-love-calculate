@@ -2,7 +2,13 @@
 export default {
   content: ["*"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        indie: ['Indie Flower', 'cursive'],
+        inika: ['Inika', 'serif'],
+      },
+    },
   },
   plugins: [],
 }
