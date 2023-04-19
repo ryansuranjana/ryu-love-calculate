@@ -20,6 +20,33 @@
           but what is beautiful is still alive in the memories."
         </blockquote>
       </header>
+      <main>
+        <div class="relative mt-1">
+          <input type="text" class="rounded-lg w-full h-[56px] border-red-400 border mt-3 outline-none p-[10px] peer" required="required" autocomplete="off" id="fname" />
+          <span
+            class="absolute left-0 top-4 p-[10px] text-gray-400 uppercase pointer-events-none duration-500 peer-valid:text-red-400 peer-valid:translate-x-3 peer-valid:-translate-y-3 peer-valid:text-[0.8em] peer-valid:py-0 peer-valid:px-2 peer-valid:bg-white peer-focus:text-red-400 peer-focus:translate-x-3 peer-focus:-translate-y-3 peer-focus:text-[0.8em] peer-focus:py-0 peer-focus:px-2 peer-focus:bg-white"
+            >Your Name</span
+          >
+        </div>
+        <div class="grid grid-cols-3 mt-4" id="result">
+          <img src="public/Foto.gif" alt="kawai" width="76px" class="my-auto" />
+          <div
+            class="w-[142px] h-[141px] bg-red-400 rounded-full grid relative place-content-center place-items-center -ml-3 before:content-[''] before:absolute before:w-[122px] before:h-[121px] before:bg-white before:rounded-full md:ml-7"
+            id="circular-progress"
+          >
+            <div class="relative" id="value-container">100%</div>
+          </div>
+          <img src="public/Foto.gif" alt="kawai" width="76px" class="my-auto ml-auto" />
+        </div>
+        <div class="relative mt-1">
+          <input type="text" class="rounded-lg w-full h-[56px] border-red-400 border mt-3 outline-none p-[10px] peer" required="required" autocomplete="off" id="sname" />
+          <span
+            class="absolute left-0 top-4 p-[10px] text-gray-400 uppercase pointer-events-none duration-500 peer-valid:text-red-400 peer-valid:translate-x-3 peer-valid:-translate-y-3 peer-valid:text-[0.8em] peer-valid:py-0 peer-valid:px-2 peer-valid:bg-white peer-focus:text-red-400 peer-focus:translate-x-3 peer-focus:-translate-y-3 peer-focus:text-[0.8em] peer-focus:py-0 peer-focus:px-2 peer-focus:bg-white"
+            >Your Crush</span
+          >
+        </div>
+        <div class="w-full h-12 bg-red-400 grid place-content-center rounded-md mt-6 cursor-pointer" id="submit"><span class="text-white font-bold text-[16px]">CALCULATE LOVE</span></div>
+      </main>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
