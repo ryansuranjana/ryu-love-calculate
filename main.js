@@ -13,15 +13,21 @@ const options = {
 }
 
 submitCalculate.addEventListener('click', function () {
-    submitCalculate.innerHTML = '<span class="text-white font-bold text-[16px]">Wait...</span>';
+    submitCalculate.innerHTML = '<span class="text-white font-bold text-[16px]">Wait...</span>'
     const fname = document.querySelector('#fname').value
     const sname = document.querySelector('#sname').value
     loveCalculate(fname, sname, options)    
-});
+})
 
 const scriptURL = env.VITE_URL_SCRIPT_SPREADSHEET
 const form = document.forms['feedback-form']
 const feedbackSubmit = document.querySelector('#submit-feedback')
 
-
-feedback(scriptURL, form, feedbackSubmit)
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    feedbackSubmit.innerHTML = 'Wait...'
+    feedback(scriptURL, new FormData(form), () => {
+        feedbackSubmit.innerHTML = '<i class="bi bi-arrow-through-heart-fill"></i>send'
+        form.reset()
+    })
+})
