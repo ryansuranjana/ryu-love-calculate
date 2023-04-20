@@ -8,7 +8,6 @@ const loveCalculate = (fname, sname, options) => {
         let progressValue = 0
         let progressEndValue = response.percentage
         let speed = 30
-        console.log(response)
 
         let progress = setInterval(() => {
             progressValue++
